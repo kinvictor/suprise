@@ -1,0 +1,6 @@
+
++ start btn.onclick
+    - undisplay start btn
+    - playing music background
+    - displaying stop music btn in top : 10
+    -  
