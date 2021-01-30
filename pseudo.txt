@@ -3,4 +3,5 @@
     - undisplay start btn
     - playing music background
     - displaying stop music btn in top : 10
-    -  
+    - start emoji find game
+    - gift emoji is clicked/mouse over deleted all elemen (search for event bubbling and how to remove elemen)

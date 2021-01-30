@@ -13,7 +13,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: lightblue;
-    position: relative;
+    /* position: relative; */
 }
 
 .start-btn {
@@ -38,7 +38,23 @@ body {
 }
 
 .stop-music-btn {
-    display: none;
     position: absolute;
     top: 10;
+    display: none;
+}
+
+.emoji, .gift-emoji {
+    position: fixed;
+    top: -1vh;
+    font-size: 2em;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
 }
