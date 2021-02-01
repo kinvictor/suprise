@@ -32,6 +32,7 @@ function createGiftEmoji() {
 
 startBtn.addEventListener('click', function() {
     startBtn.classList.add('undisplay');
+    stopMusicBtn.classList.add('display');
     
     music.play();
     const femoji = setInterval(createEmoji, 100)
