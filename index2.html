@@ -1,45 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMAGE GALLERY</title>
-    <style> 
-        * {
-            border: 1px solid green;
-            margin: 0;
-        }
+    <title>KOLEKSI POTO GANTENK</title>
+    <style>
+    
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding-left: 10vw;
+        padding-right: 10vh;
+      }
+      
+      .img-href {
+        display: inline-block;
+        width: 20vw;
+        height: 20vw;
         
-        body {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            width: 100%;
-            height: 100%;
-            display: grid;
-            place-items: center;
-            place-content: center;
-            grid-template-columns: repeat(4, 30vw);
-            gap: 10px;
-        }
-
-        .img-container {
-            width: 30vw;
-            height: 30vw;
-        }
-
-        /* .img-container .img-href img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        } */
-
-        #img1 {
+      }
+      
+      .img-href img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .zoom-img {
             display: none;
             position: fixed;
             width: 100vw;
@@ -51,82 +48,112 @@
             background-color: rgba(0, 0, 0, 0.8);
         }
 
-        #img1 a {
+        .zoom-img a {
             text-decoration: none;
+            color:cyan;
+        }
+        .zoom-img p {
             color: white;
         }
 
-        #img1:target {
+
+        .zoom-img img {
+            width: 80vw;
+        }
+        .zoom-img:target {
             display: flex;
         }
 
+
         @media(max-width: 500px) {
             .container {
-                grid-template-columns: repeat(2, 25vw);
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin: 10vh 0;
+                
             }
+            .img-href {
+                width: 35vw;
+                height: 35vw;
+            }
+        }
+
+        @media(min-width: 780px) {
+            .zoom-img img {
+                height: 70vh;
+                width: auto;
+            }
+            
         }
     </style>
 </head>
 <body>
-    
     <div class="container">
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/1.jpeg">
-            </a>
-        </div>
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/2.jpeg">
-            </a>
-        </div>
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/3.jpeg">
-            </a>
-        </div>
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/4.jpeg">
-            </a>
-        </div>
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/5.jpeg">
-            </a>
-        </div>
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/6.jpeg">
-            </a>
-        </div>
-
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/7.jpeg">
-            </a>
-        </div>
-
-        <div class="img-container">
-            <a href="#img" class="img-href">
-                <img src="etc/8.jpeg">
-            </a>
-        </div>
-
-
-        <div id="img1">
+        <a href="#img1" class="img-href">
+            <img src="etc/1.jpeg">
+        </a>
+        <a href="#img2" class="img-href">
             <img src="etc/2.jpeg">
-            <p>persembahan vanness</p>
-            <a href="#">close</a>
-        </div>
+        </a>
+        <a href="#img3" class="img-href">
+            <img src="etc/3.jpeg">
+        </a>
+        <a href="#img4" class="img-href">
+            <img src="etc/4.jpeg">
+        </a>
+        <a href="#img5" class="img-href">
+            <img src="etc/5.jpeg">
+        </a>
+        <a href="#img6" class="img-href">
+            <img src="etc/6.jpeg">
+        </a>
+        <a href="#img7" class="img-href">
+            <img src="etc/7.jpeg">
+        </a>
+        <a href="#img8" class="img-href">
+            <img src="etc/8.jpeg">
+        </a>
     </div>
 
-
+    <div id="img1" class="zoom-img">
+        <img src="etc/1.jpeg">
+        <p>mahakarya dari anyau</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img2" class="zoom-img">
+        <img src="etc/2.jpeg">
+        <p>mahakarya dari anyau</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img3" class="zoom-img">
+        <img src="etc/3.jpeg">
+        <p>mahakarya dari pannes</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img4" class="zoom-img">
+        <img src="etc/4.jpeg">
+        <p>mahakarya dari pannes</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img5" class="zoom-img">
+        <img src="etc/5.jpeg">
+        <p>mahakarya dari dwikk</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img6" class="zoom-img">
+        <img src="etc/6.jpeg">
+        <p>mahakarya dari dwikk</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img7" class="zoom-img">
+        <img src="etc/7.jpeg">
+        <p>mahakarya dari jojo</p>
+        <a href="#">tutup</a>
+    </div>
+    <div id="img8" class="zoom-img">
+        <img src="etc/8.jpeg">
+        <p>mahakarya dari studio awokwokwo</p>
+        <a href="#">tutup</a>
+    </div>
 </body>
 </html>
