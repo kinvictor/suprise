@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: .15fr 1fr;
+    min-height: 100vh;
+    background: linear-gradient(153deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%, rgba(148,233,157,1) 100%); 
+}
+
+.undisplay {
+    display: none !important;
+}
+
+.display {
+    display: flex !important;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+button:hover {
+    border-bottom: none;
+}
+
+.stop-music-btn {
+    background: rgb(218, 218, 218);
+    border-bottom: 5px solid gray;
+}
+
+
+.start-btn {
+    font-size: 1.8rem;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 10px solid orange;
+}
+
+.start-btn:hover {
+    border-bottom: none;
+}
+
+
+.content-center, .content-top, .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalkw {
+    font-size: 1.3rem;
+    height: 80vh;
+    width: 70vw;
+    padding: 50px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 5px solid white;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.5);
+    transition: 1s;
+    animation: popup 1s;
+}
+
+
+#modalkw:target {
+    display: flex;
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+}
+
+.letter button {
+    width: 100%;
+}
+
+.giftbox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.giftbox .gift img, .giftbox .gift-open img {
+    width: 50%;
+}
+
+.stop-music-btn,
+.content,
+#modalkw,
+.giftbox,
+.giftbox .text, 
+.giftbox .gift, 
+.giftbox .gift-open, 
+.letter
+{
+    display: none;
+}
+
+
+.emoji, .gift-emoji {
+    position: fixed;
+    top: -1vh;
+    font-size: 3.8rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+.end {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+@keyframes popup{
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+  }

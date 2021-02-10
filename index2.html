@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOLEKSI POTO GANTENK</title>
     <style>
-    
+        * {
+            border: 1px solid red;
+        }
       body {
+          margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,11 +20,10 @@
         width: 100vw;
         height: 100vh;
         display: grid;
+        place-items: center;
         place-content: center;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-        padding-left: 10vw;
-        padding-right: 10vh;
       }
       
       .img-href {
