@@ -95,7 +95,9 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-
+.gift-open {
+    width: 100%;
+}
 .giftbox .gift img, .giftbox .gift-open img {
     width: 50%;
 }
@@ -104,9 +106,6 @@ button:hover {
 .content,
 #modalkw,
 .giftbox,
-.giftbox .text, 
-.giftbox .gift, 
-.giftbox .gift-open, 
 .letter
 {
     display: none;

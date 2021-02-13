@@ -36,6 +36,13 @@ function createGiftEmoji() {
 
 
 startBtn.addEventListener('click', function() {
+    alert('hai dicky !')
+    alert(`setelah kamu klik okay, bakal ada bgm yang dimainkan!\n
+    kalau kamu ga suka bisa pencet yang tombol "STOP MUSIC" 1x saja\n
+    kalau kamu ingin menghidupkan musiknya kembali silahkan double click tombol tadi \n
+    cara bermain : pilihlah emoji bergambar hadiah\n
+    SELAMAT BERMAIN ! 
+    `)
     startBtn.classList.add('undisplay');
     stopMusicBtn.classList.add('display');
     content.classList.add('display');
@@ -51,14 +58,26 @@ startBtn.addEventListener('click', function() {
             clearInterval(femoji2)
             modalContainer.classList.add('display')
             giftContainer.classList.add('display')
-            giftText.classList.add('display')
-            giftImg.classList.add('display')
+            giftContainer.innerHTML = `
+                <div class="text">
+                    <p>pilih sikok kotak bae !</p>
+                </div>
+                <div class="gift">
+                    <img src="etc/gift.svg" class="a">
+                    <img src="etc/gift.svg" class="a">
+                </div>`;
         }
     })
     document.addEventListener('click', function(e){
         if(e.target.classList.contains('a')) {
-            giftImg.classList.remove('display');
-            giftImgOpen.classList.add('display');
+            giftContainer.innerHTML = `
+                <div class="text">
+                    <p>pilih sikok kotak bae !</p>
+                </div>
+                <div class="gift-open">
+                    <img src="etc/gift-open.svg" class="b">
+                    <img src="etc/gift-open.svg" class="b">
+                </div>`;
         }
     })
     document.addEventListener('click', function(e){
