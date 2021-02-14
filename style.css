@@ -25,11 +25,13 @@ body {
 button {
     border-radius: 20px;
     padding: 10px;
-    
+    background: white;
+    transition: 1s;
 }
 
 button:hover {
-    border-bottom: none;
+    background: black;
+    color: white;
 }
 
 .stop-music-btn {
@@ -37,6 +39,10 @@ button:hover {
     border-bottom: 5px solid gray;
 }
 
+
+.stop-music-btn:hover {
+    border-bottom: none;
+}
 
 .start-btn {
     font-size: 1.8rem;
@@ -89,16 +95,18 @@ button:hover {
 }
 
 .giftbox {
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.gift-open {
-    width: 100%;
+
+.gift, .gift-open { 
+    display: flex;
 }
-.giftbox .gift img, .giftbox .gift-open img {
+
+.gift img, .gift-open img {
     width: 50%;
 }
 
@@ -106,7 +114,8 @@ button:hover {
 .content,
 #modalkw,
 .giftbox,
-.letter
+.letter,
+.end
 {
     display: none;
 }

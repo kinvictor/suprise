@@ -7,7 +7,8 @@ const giftContainer = document.querySelector('.giftbox')
 const giftText = document.querySelector('.giftbox .text')
 const giftImg = document.querySelector('.gift')
 const giftImgOpen = document.querySelector('.gift-open')
-const letter1 = document.querySelector('.letter1')
+const letter1 = modalContainer.querySelector('.letter1')
+const end = modalContainer.querySelector('.end')
 
 function createEmoji() {
     const emoji = document.createElement('div');
@@ -51,7 +52,7 @@ startBtn.addEventListener('click', function() {
     const femoji = setInterval(createEmoji, 100)
     const femoji2 = setInterval(createGiftEmoji, 500)
     
-    
+    // klo inner lebih berguna utk satu kali tampil, kalo utk 2/lebih penampilan lebih baik tempelkan dihtml
     document.addEventListener('click', function(e){
         if(e.target.classList.contains('gift-emoji')) {
             clearInterval(femoji)
@@ -89,11 +90,7 @@ startBtn.addEventListener('click', function() {
     document.addEventListener('click', function(e){
         if(e.target.classList.contains('close')) {
             letter1.classList.remove('display')
-            const end = document.createElement('a');
-            end.setAttribute('href', 'index2.html');
-            end.classList.add('end')
-            end.innerHTML = 'PENCET AKUU BUAT AIB DISCOVERY !!!'
-            modalContainer.appendChild(end);
+            end.classList.add('display')
         }
     })
 
