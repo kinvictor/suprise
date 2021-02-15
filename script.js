@@ -38,10 +38,11 @@ function createGiftEmoji() {
 
 startBtn.addEventListener('click', function() {
     alert('hai dicky !')
-    alert(`setelah kamu klik okay, bakal ada bgm yang dimainkan!\n
-    kalau kamu ga suka bisa pencet yang tombol "STOP MUSIC" 1x saja\n
-    kalau kamu ingin menghidupkan musiknya kembali silahkan double click tombol tadi \n
+    alert(`setelah anda klik ok, bakal ada bgm yang dimainkan!\n
+    kalau anda tidak suka bisa pencet yang tombol "STOP MUSIC" 1x\n
+    kalau anda ingin menghidupkan bgmnya kembali silahkan double click tombol tadi \n
     cara bermain : pilihlah emoji bergambar hadiah\n
+    langkah selanjutnya silahkan pikirkan sendiri\n
     SELAMAT BERMAIN ! 
     `)
     startBtn.classList.add('undisplay');
