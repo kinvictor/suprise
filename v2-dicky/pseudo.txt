@@ -1,0 +1,24 @@
+
++ start btn.onclick
+    - undisplay start btn 𝐎𝐊
+    - playing music background 𝐎𝐊
+    - displaying stop music btn in top : 10  #IT CANNOT MOVE
+    - start emoji find game 𝐎𝐊
+    - gift emoji is clicked/mouse over deleted all elemen #THE EMOJI CAN'T BE CLICKED
+(event bubbling to take an el doesn't exist, remove elemen) 
+𝐎𝐊 REMOVE EL #IT'S NOT CONNECTED W EVENT BUBBLING
+    - the alternative is displaying emoji raining for 5 sec and go to next step 𝐎𝐊
+    - display 2 boxs, don't care which box is clicked lol
+    + box clicked
+      - displaying letter modal message + img if exist
+    + modal closed display a toast notif game
+i don't really sure the toast thing will working well :v
+      - the alternative is displaying toast notif for 5 sec and go to next step
+    - display 2 boxs, don't care which box is clicked lol
+    + box clicked
+      - displaying letter modal message + img if exist
+    + modal closed display a photo lightbox w next btn
+      - next btn clicked
+      - displaying last message and mini best photo on top + link to my socmed
+
+i just think abt some logic and when i applied it doesn't work
