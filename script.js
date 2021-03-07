@@ -37,7 +37,7 @@ function createGiftEmoji() {
 
 
 startBtn.addEventListener('click', function() {
-    alert('hai dicky !')
+    alert('konnichiwa panes cwan !')
     alert(`setelah anda klik ok, bakal ada bgm yang dimainkan!\n
     kalau anda tidak suka bisa pencet yang tombol "MATIKE MUSIK" 1x\n
     kalau anda ingin menghidupkan bgmnya kembali silahkan double click tombol tadi\n
