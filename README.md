@@ -2,9 +2,15 @@
 birthday suprise project
 
 version list
-- 2020/02/03 v1 ano
+- 2021/02/03 v1 ano
 belum diserahkan :)
 banyak fitur yang dihilangkan karena keterbatasan waktu
 
-- 2020/02/25 v2 dicky
-on process
+- 2021/02/25 v2 dicky
+telah diserahkan, telat
+
+- 2021/03/03 v3 panes
+telah diserahkan, telat 
+foto kurang, kelupaan nandain ultahnya
+
+- 2021/
